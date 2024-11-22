@@ -16,7 +16,10 @@ object RoomListActor {
     Behaviors.setup { context =>
       Behaviors.receiveMessage {
         case CreateRoom(name)       => ???
-        case GetRoom(name, replyTo) => ???
+          
+        case GetRoom(name, replyTo) => 
+          replyTo.!(rooms.get(name))
+          Behaviors.same
       }
     }
   }

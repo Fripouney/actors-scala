@@ -14,6 +14,8 @@ import org.apache.pekko.http.scaladsl.model.StatusCodes
 import org.apache.pekko.http.scaladsl.server.{ Directives, Route }
 import org.apache.pekko.util.Timeout
 import spray.json.*
+import org.apache.pekko.actor.Actor
+//import org.apache.pekko.http.javadsl.model.ws.Message
 
 case class PostInput(author: String, content: String)
 
@@ -117,7 +119,15 @@ case class Controller(
 
   private def listRooms() = ???
 
-  private def getRoom(roomId: String) = ???
+  private def getRoom(roomId: String) = 
+    rooms
+      .ask[Option[ActorRef[Message]]](ref => GetRoom(roomId, ref))
+      .map {
+        case Some(roomActorRef) => 
+          StatusCodes.OK -> roomActorRef
+        case None =>
+          StatusCodes.NotFound
+      }
 
   private def createPost(roomId: String, input: PostInput) = ???
 
@@ -137,5 +147,18 @@ case class Controller(
           StatusCodes.NotFound
       }
 
-  private def getPost(roomId: String, messageId: String) = ???
+  private def getPost(roomId: String, messageId: String) =
+  
+    rooms
+      .ask[Option[ActorRef[Message]]](ref => GetRoom(roomId, ref))
+      .flatMap {
+        case Some(roomActorRef) => roomActorRef.ask[Option[Post]](ref => Message.GetPost(UUID.fromString(messageId), ref))
+        case None => Future.successful(None)
+      }
+      .map {
+        case Some(post) =>
+          StatusCodes.OK -> post.output(roomId)
+        case None =>
+          StatusCodes.NotFound
+      }
 }
