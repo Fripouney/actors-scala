@@ -1,0 +1,14 @@
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(sbtMapExec 122 __0a970ce6-7f6f-490e-9670-ad718795d16c, None, None)
+[debug] > Exec(bspScalaTestClasses file:/home/fripouney/scala/tp-actors-cytech/#root/Compile, Some(__0a970ce6-7f6f-490e-9670-ad718795d16c), Some(CommandSource(network-1)))
+[debug] jsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":4,"message":"Processing buildTarget/scalaTestClasses"})
+[debug] Evaluating tasks: bspScalaTestClasses
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Total time: 0 s, completed 24 nov. 2024 à 14:30:09
+[debug] > Exec(sbtCompleteExec 122, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(sbtReportResult 122, Some(122), Some(CommandSource(network-1)))
+[debug] unmatched Processing event for requestId Some(122): None
+[debug] unmatched json response for requestId Some(122): {"status":"Done","channelName":"network-1","execId":"122","commandQueue":["shell"],"exitCode":0}
+[debug] > Exec(shell, None, None)

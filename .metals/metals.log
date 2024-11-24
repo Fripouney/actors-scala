@@ -7701,3 +7701,2687 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental)
 
 2024.11.22 15:35:32 INFO  Processing buildTarget/scalaTestClasses
 2024.11.22 15:36:15 INFO  Processing buildTarget/compile
+2024.11.22 15:37:15 INFO  Processing buildTarget/compile
+2024.11.22 15:38:15 INFO  Processing buildTarget/compile
+2024.11.22 15:39:15 INFO  Processing buildTarget/compile
+2024.11.22 15:40:15 INFO  Processing buildTarget/compile
+2024.11.22 15:41:15 INFO  Processing buildTarget/compile
+2024.11.22 15:42:15 INFO  Processing buildTarget/compile
+2024.11.22 15:43:15 INFO  Processing buildTarget/compile
+2024.11.22 15:44:15 INFO  Processing buildTarget/compile
+2024.11.22 15:45:15 INFO  Processing buildTarget/compile
+2024.11.22 15:47:12 INFO  Processing buildTarget/compile
+2024.11.22 15:47:12 INFO  compiling root
+2024.11.22 15:47:12 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:47:12 ERROR -- Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:112:36 
+112 |      get {git remote add origin git@github.com:Fripouney/actors-scala.git
+    |                                    ^
+    |                               end of statement expected but '@' found
+2024.11.22 15:47:13 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:47:13 ERROR -- [E006] Not Found Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:112:11 
+112 |      get {git remote add origin git@github.com:Fripouney/actors-scala.git
+    |           ^^^
+    |           Not found: git - did you mean get?
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:47:13 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:113:24 
+113 |        complete(getPost(roomId, messageId))
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Found:    scala.concurrent.Future[(
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+    |  fr.cytech.icc.PostOutput) |
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+    |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+    |
+    |One of the following imports might make progress towards fixing the problem:
+    |
+    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+    |
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:47:13 ERROR four errors found
+2024.11.22 15:47:13 INFO  time: compiled root in 1.35s
+2024.11.22 15:47:13 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:47:13 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:47:13 INFO  Processing buildTarget/scalaTestClasses
+2024.11.22 15:47:13 INFO  Processing buildTarget/scalaMainClasses
+2024.11.22 15:47:13 INFO  compiling root
+2024.11.22 15:47:13 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:47:13 ERROR -- Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:112:36 
+112 |      get {git remote add origin git@github.com:Fripouney/actors-scala.git
+    |                                    ^
+    |                               end of statement expected but '@' found
+2024.11.22 15:47:15 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:47:15 ERROR -- [E006] Not Found Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:112:11 
+112 |      get {git remote add origin git@github.com:Fripouney/actors-scala.git
+    |           ^^^
+    |           Not found: git - did you mean get?
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:47:15 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:113:24 
+113 |        complete(getPost(roomId, messageId))
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Found:    scala.concurrent.Future[(
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+    |  fr.cytech.icc.PostOutput) |
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+    |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+    |
+    |One of the following imports might make progress towards fixing the problem:
+    |
+    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+    |
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:47:15 ERROR four errors found
+2024.11.22 15:47:15 INFO  time: compiled root in 2.04s
+2024.11.22 15:47:15 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:47:15 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:47:15 INFO  Processing buildTarget/compile
+2024.11.22 15:48:15 INFO  Processing buildTarget/compile
+2024.11.22 15:48:20 INFO  Processing buildTarget/compile
+2024.11.22 15:48:20 INFO  compiling root
+2024.11.22 15:48:20 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:48:20 ERROR -- Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:112:36 
+112 |      get {git remote add origin git@github.com:Fripouney/actors-scala.git
+    |                                    ^
+    |                               end of statement expected but '@' found
+2024.11.22 15:48:21 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:21 ERROR -- [E006] Not Found Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:112:11 
+112 |      get {git remote add origin git@github.com:Fripouney/actors-scala.git
+    |           ^^^
+    |           Not found: git - did you mean get?
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:21 ERROR three errors found
+2024.11.22 15:48:21 INFO  time: compiled root in 1.36s
+2024.11.22 15:48:21 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:48:21 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:48:21 INFO  Processing buildTarget/scalaTestClasses
+2024.11.22 15:48:21 INFO  Processing buildTarget/scalaMainClasses
+2024.11.22 15:48:21 INFO  compiling root
+2024.11.22 15:48:21 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:48:21 ERROR -- Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:112:36 
+112 |      get {git remote add origin git@github.com:Fripouney/actors-scala.git
+    |                                    ^
+    |                               end of statement expected but '@' found
+2024.11.22 15:48:23 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:23 ERROR -- [E006] Not Found Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:112:11 
+112 |      get {git remote add origin git@github.com:Fripouney/actors-scala.git
+    |           ^^^
+    |           Not found: git - did you mean get?
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:23 ERROR three errors found
+2024.11.22 15:48:23 INFO  time: compiled root in 1.8s
+2024.11.22 15:48:23 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:48:23 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:48:47 INFO  Processing buildTarget/compile
+2024.11.22 15:48:47 INFO  compiling root
+2024.11.22 15:48:47 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:48:48 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:48 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:113:15 
+113 |        getPost(roomId, messageId)
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Found:    scala.concurrent.Future[(
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+    |  fr.cytech.icc.PostOutput) |
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+    |Required: org.apache.pekko.http.scaladsl.server.Route
+    |
+    |One of the following imports might make progress towards fixing the problem:
+    |
+    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+    |
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:48 ERROR two errors found
+2024.11.22 15:48:48 INFO  time: compiled root in 1.63s
+2024.11.22 15:48:48 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:48:49 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:48:48 INFO  Processing buildTarget/scalaMainClasses
+2024.11.22 15:48:48 INFO  compiling root
+2024.11.22 15:48:48 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:48:51 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:51 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:113:15 
+113 |        getPost(roomId, messageId)
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Found:    scala.concurrent.Future[(
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+    |  fr.cytech.icc.PostOutput) |
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+    |Required: org.apache.pekko.http.scaladsl.server.Route
+    |
+    |One of the following imports might make progress towards fixing the problem:
+    |
+    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+    |
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:51 ERROR two errors found
+2024.11.22 15:48:51 INFO  time: compiled root in 2.29s
+2024.11.22 15:48:51 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:48:51 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:48:51 INFO  Processing buildTarget/scalaTestClasses
+2024.11.22 15:48:57 INFO  Processing buildTarget/compile
+2024.11.22 15:48:57 INFO  compiling root
+2024.11.22 15:48:57 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:48:59 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:59 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:113:24 
+113 |        complete(getPost(roomId, messageId))
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Found:    scala.concurrent.Future[(
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+    |  fr.cytech.icc.PostOutput) |
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+    |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+    |
+    |One of the following imports might make progress towards fixing the problem:
+    |
+    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+    |
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:48:59 ERROR two errors found
+2024.11.22 15:48:59 INFO  time: compiled root in 1.69s
+2024.11.22 15:48:59 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:48:59 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:48:59 INFO  Processing buildTarget/scalaMainClasses
+2024.11.22 15:48:59 INFO  compiling root
+2024.11.22 15:48:59 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:49:01 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:49:01 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:113:24 
+113 |        complete(getPost(roomId, messageId))
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Found:    scala.concurrent.Future[(
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+    |  fr.cytech.icc.PostOutput) |
+    |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+    |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+    |
+    |One of the following imports might make progress towards fixing the problem:
+    |
+    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+    |
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:49:01 ERROR two errors found
+2024.11.22 15:49:01 INFO  time: compiled root in 1.97s
+2024.11.22 15:49:01 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:49:01 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:49:01 INFO  Processing buildTarget/scalaTestClasses
+2024.11.22 15:49:14 INFO  Processing buildTarget/compile
+2024.11.22 15:49:14 INFO  compiling root
+2024.11.22 15:49:14 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:49:15 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:49:15 ERROR one error found
+2024.11.22 15:49:15 INFO  time: compiled root in 1.36s
+2024.11.22 15:49:15 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:49:15 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:49:15 INFO  Processing buildTarget/compile
+2024.11.22 15:49:15 INFO  Processing buildTarget/scalaMainClasses
+2024.11.22 15:49:15 INFO  compiling root
+2024.11.22 15:49:15 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:49:17 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
+96 |        getRoom(roomId)
+   |        ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.server.Route
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:49:17 ERROR one error found
+2024.11.22 15:49:17 INFO  time: compiled root in 1.66s
+2024.11.22 15:49:17 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:49:17 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:49:17 INFO  Processing buildTarget/scalaTestClasses
+2024.11.22 15:49:38 INFO  Processing buildTarget/compile
+2024.11.22 15:49:38 INFO  compiling root
+2024.11.22 15:49:38 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:49:39 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:49:39 ERROR one error found
+2024.11.22 15:49:39 INFO  time: compiled root in 1.19s
+2024.11.22 15:49:39 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:49:39 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:49:39 INFO  Processing buildTarget/scalaTestClasses
+2024.11.22 15:49:39 INFO  Processing buildTarget/scalaMainClasses
+2024.11.22 15:49:39 INFO  compiling root
+2024.11.22 15:49:39 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:49:40 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:49:40 ERROR one error found
+2024.11.22 15:49:40 INFO  time: compiled root in 1.28s
+2024.11.22 15:49:40 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:49:40 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:50:06 INFO  Processing buildTarget/compile
+2024.11.22 15:50:06 INFO  compiling root
+2024.11.22 15:50:06 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:50:07 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:127:10 
+127 |          StatusCodes.OK -> roomActorRef
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Found:    (org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+    |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message])
+    |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+    |
+    |One of the following imports might make progress towards fixing the problem:
+    |
+    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+    |
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:50:07 ERROR one error found
+2024.11.22 15:50:07 INFO  time: compiled root in 1.39s
+2024.11.22 15:50:07 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:50:08 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:50:07 INFO  Processing buildTarget/scalaTestClasses
+2024.11.22 15:50:07 INFO  Processing buildTarget/scalaMainClasses
+2024.11.22 15:50:07 INFO  compiling root
+2024.11.22 15:50:07 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:50:09 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:127:10 
+127 |          StatusCodes.OK -> roomActorRef
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Found:    (org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+    |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message])
+    |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+    |
+    |One of the following imports might make progress towards fixing the problem:
+    |
+    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+    |
+    |
+    | longer explanation available when compiling with `-explain`
+2024.11.22 15:50:09 ERROR one error found
+2024.11.22 15:50:09 INFO  time: compiled root in 1.4s
+2024.11.22 15:50:09 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:50:09 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:50:15 INFO  Processing buildTarget/compile
+2024.11.22 15:50:45 INFO  Processing buildTarget/compile
+2024.11.22 15:50:45 INFO  compiling root
+2024.11.22 15:50:45 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:50:47 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:50:47 ERROR one error found
+2024.11.22 15:50:47 INFO  time: compiled root in 1.41s
+2024.11.22 15:50:47 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:50:47 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:50:47 INFO  Processing buildTarget/scalaMainClasses
+2024.11.22 15:50:47 INFO  compiling root
+2024.11.22 15:50:47 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.22 15:50:49 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.22 15:50:49 ERROR one error found
+2024.11.22 15:50:49 INFO  time: compiled root in 1.88s
+2024.11.22 15:50:49 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.22 15:50:49 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.22 15:50:49 INFO  Processing buildTarget/scalaTestClasses
+2024.11.22 15:51:15 INFO  Processing buildTarget/compile
+2024.11.22 15:52:15 INFO  Processing buildTarget/compile
+2024.11.22 15:53:15 INFO  Processing buildTarget/compile
+2024.11.22 15:54:15 INFO  Processing buildTarget/compile
+2024.11.22 15:55:15 INFO  Processing buildTarget/compile
+2024.11.22 15:56:15 INFO  Processing buildTarget/compile
+2024.11.22 15:57:15 INFO  Processing buildTarget/compile
+2024.11.22 15:58:15 INFO  Processing buildTarget/compile
+2024.11.22 15:59:15 INFO  Processing buildTarget/compile
+2024.11.22 16:00:15 INFO  Processing buildTarget/compile
+2024.11.23 14:19:16 INFO  Shutting down server
+2024.11.23 14:19:16 INFO  shutting down Metals
+2024.11.23 14:19:17 INFO  Shut down connection with build server.
+2024.11.23 14:19:16 INFO  Exiting server
+2024.11.24 14:37:39 INFO  Started: Metals version 1.4.1 in folders '/home/fripouney/scala/tp-actors-cytech' for client Visual Studio Code 1.95.3.
+2024.11.24 14:37:40 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.24 14:37:40 INFO  no build target found for /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomListActor.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.24 13:37:42 INFO  no build target found for /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomListActor.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.24 13:37:42 INFO  no build target found for /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomListActor.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.24 13:37:42 INFO  Attempting to connect to the build server...
+2024.11.24 13:37:42 INFO  Running BSP server List(/home/fripouney/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%252B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.25_9.tar.gz/jdk-11.0.25+9/bin/java, -Xms100m, -Xmx100m, -classpath, /home/fripouney/.cache/coursier/arc/https/github.com/sbt/sbt/releases/download/v1.10.5/sbt-1.10.5.zip/sbt/bin/sbt-launch.jar, -Dsbt.script=/home/fripouney/.cache/coursier/arc/https/github.com/sbt/sbt/releases/download/v1.10.5/sbt-1.10.5.zip/sbt/bin/sbt, xsbt.boot.Boot, -bsp)
+2024.11.24 13:37:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/fripouney/scala/tp-actors-cytech/.metals/bsp.trace.json or /home/fripouney/.cache/metals/bsp.trace.json
+2024.11.24 13:37:44 INFO  BSP server: [info] server was not detected. starting an instance
+2024.11.24 13:37:46 INFO  BSP server: WARNING: An illegal reflective access operation has occurred
+2024.11.24 13:37:46 INFO  BSP server: WARNING: Illegal reflective access by org.jline.terminal.impl.exec.ExecTerminalProvider$ReflectionRedirectPipeCreator (file:/home/fripouney/.sbt/boot/scala-2.12.20/org.scala-sbt/sbt/1.10.5/jline-terminal-3.27.1.jar) to constructor java.lang.ProcessBuilder$RedirectPipeImpl()
+2024.11.24 13:37:46 INFO  BSP server: WARNING: Please consider reporting this to the maintainers of org.jline.terminal.impl.exec.ExecTerminalProvider$ReflectionRedirectPipeCreator
+2024.11.24 13:37:46 INFO  BSP server: WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+2024.11.24 13:37:46 INFO  BSP server: WARNING: All illegal access operations will be denied in a future release
+2024.11.24 13:37:46 INFO  BSP server: [info] welcome to sbt 1.10.5 (Eclipse Adoptium Java 11.0.25)
+2024.11.24 13:37:48 INFO  BSP server: [info] loading settings for project tp-actors-cytech-build-build from metals.sbt ...
+2024.11.24 13:37:48 INFO  BSP server: [info] loading project definition from /home/fripouney/scala/tp-actors-cytech/project/project
+2024.11.24 13:37:50 INFO  BSP server: [info] loading settings for project tp-actors-cytech-build from metals.sbt,plugins.sbt ...
+2024.11.24 13:37:50 INFO  BSP server: [info] loading project definition from /home/fripouney/scala/tp-actors-cytech/project
+2024.11.24 13:37:50 INFO  BSP server: [info] loading settings for project root from build.sbt ...
+2024.11.24 13:37:50 INFO  BSP server: [info] set current project to tp-actors (in build file:/home/fripouney/scala/tp-actors-cytech/)
+2024.11.24 13:37:50 INFO  BSP server: [warn] there's a key that's not used by any other settings/tasks:
+2024.11.24 13:37:50 INFO  BSP server: [warn]  
+2024.11.24 13:37:50 INFO  BSP server: [warn] * root / idePackagePrefix
+2024.11.24 13:37:50 INFO  BSP server: [warn]   +- /home/fripouney/scala/tp-actors-cytech/build.sbt:11
+2024.11.24 13:37:50 INFO  BSP server: [warn]  
+2024.11.24 13:37:50 INFO  BSP server: [warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check
+2024.11.24 13:37:50 INFO  BSP server: [warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key
+2024.11.24 13:37:50 INFO  BSP server: [info] sbt server started at local:///home/fripouney/.sbt/1.0/server/cecbd95c79d038f7bf75/sock
+2024.11.24 13:37:51 INFO  time: Connected to build server in 9.02s
+2024.11.24 13:37:51 INFO  Connected to Build server: sbt v1.10.5
+2024.11.24 13:37:51 INFO  Processing workspace/buildTargets
+2024.11.24 13:37:51 INFO  no build target found for /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomListActor.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.24 13:37:51 INFO  Processing buildTarget/scalacOptions
+2024.11.24 13:37:51 INFO  Processing buildTarget/sources
+2024.11.24 13:37:51 INFO  Processing buildTarget/dependencySources
+2024.11.24 13:37:52 INFO  time: Imported build in 1.76s
+2024.11.24 13:37:52 INFO  running doctor check
+2024.11.24 13:37:52 INFO  java targets: 
+2024.11.24 13:37:55 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.24 13:37:55 INFO  time: indexed workspace in 3.76s
+2024.11.24 13:37:56 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:37:57 INFO  compiling root
+2024.11.24 13:37:57 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:38:05 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:38:05 ERROR one error found
+2024.11.24 13:38:05 INFO  time: compiled root in 7.45s
+2024.11.24 13:38:05 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:38:05 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:38:05 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:38:05 INFO  compiling root
+2024.11.24 13:38:05 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:38:07 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:38:07 ERROR one error found
+2024.11.24 13:38:07 INFO  time: compiled root in 2.41s
+2024.11.24 13:38:07 INFO  Processing buildTarget/compile
+2024.11.24 13:38:07 INFO  compiling root
+2024.11.24 13:38:07 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:38:10 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:38:10 ERROR one error found
+2024.11.24 13:38:10 INFO  time: compiled root in 2.27s
+2024.11.24 13:38:10 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:38:10 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:38:10 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:38:10 INFO  compiling root
+2024.11.24 13:38:10 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:38:12 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:38:12 ERROR one error found
+2024.11.24 13:38:12 INFO  time: compiled root in 2.35s
+2024.11.24 13:38:12 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:38:12 INFO  Scala test classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:38:12 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:38:12 INFO  compiling root
+2024.11.24 13:38:12 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:38:14 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:38:14 ERROR one error found
+2024.11.24 13:38:14 INFO  time: compiled root in 1.81s
+2024.11.24 13:38:14 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:38:14 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:38:14 INFO  Processing buildTarget/compile
+2024.11.24 13:38:14 INFO  compiling root
+2024.11.24 13:38:14 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:38:16 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:38:16 ERROR one error found
+2024.11.24 13:38:16 INFO  time: compiled root in 1.63s
+2024.11.24 13:38:16 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:38:16 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:38:16 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:38:16 INFO  compiling root
+2024.11.24 13:38:16 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:38:18 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:38:18 ERROR one error found
+2024.11.24 13:38:18 INFO  time: compiled root in 1.9s
+2024.11.24 13:38:18 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:38:18 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:38:18 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:38:51 INFO  Processing buildTarget/compile
+2024.11.24 13:39:51 INFO  Processing buildTarget/compile
+2024.11.24 13:40:51 INFO  Processing buildTarget/compile
+2024.11.24 13:40:59 INFO  Processing buildTarget/compile
+2024.11.24 13:40:59 INFO  compiling root
+2024.11.24 13:40:59 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:41:01 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:41:01 ERROR one error found
+2024.11.24 13:41:01 INFO  time: compiled root in 1.72s
+2024.11.24 13:41:01 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:41:01 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:41:01 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:41:01 INFO  compiling root
+2024.11.24 13:41:01 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:41:03 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:41:03 ERROR one error found
+2024.11.24 13:41:03 INFO  time: compiled root in 1.83s
+2024.11.24 13:41:03 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:41:03 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:41:03 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:41:51 INFO  Processing buildTarget/compile
+2024.11.24 13:42:51 INFO  Processing buildTarget/compile
+2024.11.24 13:43:51 INFO  Processing buildTarget/compile
+2024.11.24 13:44:51 INFO  Processing buildTarget/compile
+2024.11.24 13:45:51 INFO  Processing buildTarget/compile
+2024.11.24 13:45:58 INFO  Processing buildTarget/compile
+2024.11.24 13:45:58 INFO  compiling root
+2024.11.24 13:45:58 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:45:59 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:45:59 ERROR one error found
+2024.11.24 13:45:59 INFO  time: compiled root in 1.84s
+2024.11.24 13:45:59 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:46:00 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:45:59 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:45:59 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:45:59 INFO  compiling root
+2024.11.24 13:45:59 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:46:02 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:46:02 ERROR one error found
+2024.11.24 13:46:02 INFO  time: compiled root in 1.9s
+2024.11.24 13:46:02 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:46:02 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:46:51 INFO  Processing buildTarget/compile
+2024.11.24 13:47:51 INFO  Processing buildTarget/compile
+2024.11.24 13:48:51 INFO  Processing buildTarget/compile
+2024.11.24 13:49:51 INFO  Processing buildTarget/compile
+2024.11.24 13:50:51 INFO  Processing buildTarget/compile
+2024.11.24 13:50:51 INFO  Processing buildTarget/compile
+2024.11.24 13:50:51 INFO  compiling root
+2024.11.24 13:50:51 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:50:53 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:28:17 
+28 |        replyTo.!(posts)
+   |        ^^^^^^^^^^^^^^^^
+   |Found:    Unit
+   |Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:50:53 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:50:53 ERROR two errors found
+2024.11.24 13:50:53 INFO  time: compiled root in 2.15s
+2024.11.24 13:50:53 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:50:53 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:50:53 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:50:53 INFO  compiling root
+2024.11.24 13:50:53 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:50:55 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:28:17 
+28 |        replyTo.!(posts)
+   |        ^^^^^^^^^^^^^^^^
+   |Found:    Unit
+   |Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:50:55 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:50:55 ERROR two errors found
+2024.11.24 13:50:55 INFO  time: compiled root in 2.27s
+2024.11.24 13:50:55 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:50:56 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:50:55 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:51:08 INFO  Processing buildTarget/compile
+2024.11.24 13:51:08 INFO  compiling root
+2024.11.24 13:51:08 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:51:09 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:51:09 ERROR one error found
+2024.11.24 13:51:09 INFO  time: compiled root in 1.61s
+2024.11.24 13:51:09 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:51:09 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:51:09 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:51:09 INFO  compiling root
+2024.11.24 13:51:09 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:51:11 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:51:11 ERROR one error found
+2024.11.24 13:51:11 INFO  time: compiled root in 1.7s
+2024.11.24 13:51:11 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:51:11 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:51:11 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:51:51 INFO  Processing buildTarget/compile
+2024.11.24 13:52:51 INFO  Processing buildTarget/compile
+2024.11.24 13:53:51 INFO  Processing buildTarget/compile
+2024.11.24 13:54:51 INFO  Processing buildTarget/compile
+2024.11.24 13:55:00 INFO  Processing buildTarget/compile
+2024.11.24 13:55:00 INFO  compiling root
+2024.11.24 13:55:00 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:55:01 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:28:61 
+28 |        val newPost = new Post(id, author, dateTime, content)
+   |                                                             ^
+   |Found:    Unit
+   |Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:55:01 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:55:01 ERROR two errors found
+2024.11.24 13:55:01 INFO  time: compiled root in 1.71s
+2024.11.24 13:55:01 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:55:02 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:55:01 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:55:01 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:55:01 INFO  compiling root
+2024.11.24 13:55:01 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:55:03 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:28:61 
+28 |        val newPost = new Post(id, author, dateTime, content)
+   |                                                             ^
+   |Found:    Unit
+   |Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:55:03 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:55:03 ERROR two errors found
+2024.11.24 13:55:03 INFO  time: compiled root in 1.97s
+2024.11.24 13:55:03 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:55:04 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:55:51 INFO  Processing buildTarget/compile
+2024.11.24 13:56:51 INFO  Processing buildTarget/compile
+2024.11.24 13:57:07 INFO  Processing buildTarget/compile
+2024.11.24 13:57:07 INFO  compiling root
+2024.11.24 13:57:07 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:57:07 ERROR -- [E134] Type Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:29:14 
+29 |        posts.++(newPost)
+   |        ^^^^^^^^
+   |None of the overloaded alternatives of method ++ in trait SetOps with types
+   | (that: IterableOnce[fr.cytech.icc.Post]):
+   |  scala.collection.immutable.SortedSet[fr.cytech.icc.Post]
+   | [B >: fr.cytech.icc.Post](suffix: IterableOnce[B]): Set[B]
+   |match arguments ((newPost : fr.cytech.icc.Post))
+2024.11.24 13:57:09 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:57:09 ERROR two errors found
+2024.11.24 13:57:09 INFO  time: compiled root in 1.57s
+2024.11.24 13:57:09 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:57:09 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:57:09 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 13:57:09 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 13:57:09 INFO  compiling root
+2024.11.24 13:57:09 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 13:57:09 ERROR -- [E134] Type Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:29:14 
+29 |        posts.++(newPost)
+   |        ^^^^^^^^
+   |None of the overloaded alternatives of method ++ in trait SetOps with types
+   | (that: IterableOnce[fr.cytech.icc.Post]):
+   |  scala.collection.immutable.SortedSet[fr.cytech.icc.Post]
+   | [B >: fr.cytech.icc.Post](suffix: IterableOnce[B]): Set[B]
+   |match arguments ((newPost : fr.cytech.icc.Post))
+2024.11.24 13:57:11 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 13:57:11 ERROR two errors found
+2024.11.24 13:57:11 INFO  time: compiled root in 1.45s
+2024.11.24 13:57:11 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 13:57:11 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 13:57:51 INFO  Processing buildTarget/compile
+2024.11.24 13:58:51 INFO  Processing buildTarget/compile
+2024.11.24 13:59:51 INFO  Processing buildTarget/compile
+2024.11.24 14:00:51 INFO  Processing buildTarget/compile
+nov. 24, 2024 2:01:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1312
+nov. 24, 2024 2:01:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1313
+2024.11.24 14:01:37 INFO  Processing buildTarget/compile
+2024.11.24 14:01:37 INFO  compiling root
+2024.11.24 14:01:37 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:01:39 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:28:61 
+28 |        val newPost = new Post(id, author, dateTime, content)
+   |                                                             ^
+   |Found:    Unit
+   |Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:01:39 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:01:39 ERROR two errors found
+2024.11.24 14:01:39 INFO  time: compiled root in 2.26s
+2024.11.24 14:01:39 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:01:40 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:01:39 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:01:39 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:01:39 INFO  compiling root
+2024.11.24 14:01:39 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:01:41 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:28:61 
+28 |        val newPost = new Post(id, author, dateTime, content)
+   |                                                             ^
+   |Found:    Unit
+   |Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:01:41 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:01:41 ERROR two errors found
+2024.11.24 14:01:41 INFO  time: compiled root in 2.13s
+2024.11.24 14:01:41 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:01:42 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:01:51 INFO  Processing buildTarget/compile
+2024.11.24 14:02:51 INFO  Processing buildTarget/compile
+nov. 24, 2024 2:03:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1475
+2024.11.24 14:03:51 INFO  Processing buildTarget/compile
+nov. 24, 2024 2:04:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1608
+2024.11.24 14:04:38 INFO  Processing buildTarget/compile
+2024.11.24 14:04:38 INFO  compiling root
+2024.11.24 14:04:38 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:04:38 ERROR -- [E040] Syntax Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:32:6 
+32 |      case Message.ListPosts(replyTo) =>
+   |      ^^^^
+   |      an identifier expected, but unindent found
+2024.11.24 14:04:40 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:04:40 ERROR two errors found
+2024.11.24 14:04:40 INFO  time: compiled root in 1.72s
+2024.11.24 14:04:40 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:04:40 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:04:40 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:04:40 INFO  compiling root
+2024.11.24 14:04:40 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:04:40 ERROR -- [E040] Syntax Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:32:6 
+32 |      case Message.ListPosts(replyTo) =>
+   |      ^^^^
+   |      an identifier expected, but unindent found
+2024.11.24 14:04:41 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:04:41 ERROR two errors found
+2024.11.24 14:04:41 INFO  time: compiled root in 1.6s
+2024.11.24 14:04:41 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:04:41 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:04:41 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:04:51 INFO  Processing buildTarget/compile
+2024.11.24 14:05:51 INFO  Processing buildTarget/compile
+2024.11.24 14:06:51 INFO  Processing buildTarget/compile
+2024.11.24 14:07:51 INFO  Processing buildTarget/compile
+2024.11.24 14:08:51 INFO  Processing buildTarget/compile
+2024.11.24 14:08:51 INFO  Processing buildTarget/compile
+2024.11.24 14:08:51 INFO  compiling root
+2024.11.24 14:08:51 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:08:51 ERROR -- [E040] Syntax Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:32:6 
+32 |      case Message.ListPosts(replyTo) =>
+   |      ^^^^
+   |      an identifier expected, but unindent found
+2024.11.24 14:08:53 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomListActor.scala:19:45 
+19 |          val room = new ActorRef[Message] {}
+   |                                             ^
+   |Found:    Unit
+   |Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.RoomListMessage]
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:08:53 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:08:53 ERROR three errors found
+2024.11.24 14:08:53 INFO  time: compiled root in 1.73s
+2024.11.24 14:08:53 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:08:53 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:08:53 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:08:53 INFO  compiling root
+2024.11.24 14:08:53 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:08:53 ERROR -- [E040] Syntax Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:32:6 
+32 |      case Message.ListPosts(replyTo) =>
+   |      ^^^^
+   |      an identifier expected, but unindent found
+2024.11.24 14:08:55 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomListActor.scala:19:45 
+19 |          val room = new ActorRef[Message] {}
+   |                                             ^
+   |Found:    Unit
+   |Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.RoomListMessage]
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:08:55 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:08:55 ERROR three errors found
+2024.11.24 14:08:55 INFO  time: compiled root in 1.92s
+2024.11.24 14:08:55 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:08:55 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:08:55 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:09:51 INFO  Processing buildTarget/compile
+2024.11.24 14:10:17 INFO  Processing buildTarget/compile
+2024.11.24 14:10:17 INFO  compiling root
+2024.11.24 14:10:17 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:10:17 ERROR -- [E040] Syntax Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:32:6 
+32 |      case Message.ListPosts(replyTo) =>
+   |      ^^^^
+   |      an identifier expected, but unindent found
+2024.11.24 14:10:19 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:10:19 ERROR two errors found
+2024.11.24 14:10:19 INFO  time: compiled root in 1.9s
+2024.11.24 14:10:19 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:10:19 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:10:19 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:10:19 INFO  compiling root
+2024.11.24 14:10:19 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:10:19 ERROR -- [E040] Syntax Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:32:6 
+32 |      case Message.ListPosts(replyTo) =>
+   |      ^^^^
+   |      an identifier expected, but unindent found
+2024.11.24 14:10:21 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:10:21 ERROR two errors found
+2024.11.24 14:10:21 INFO  time: compiled root in 2.1s
+2024.11.24 14:10:21 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:10:21 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:10:21 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:10:51 INFO  Processing buildTarget/compile
+2024.11.24 14:11:51 INFO  Processing buildTarget/compile
+nov. 24, 2024 2:12:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/fripouney/scala/tp-actors-cytech/.metals/.reports/metals-full/2024-11-24/r_compiler-error_(root)_14-12-48-976.md
+2024.11.24 14:12:51 INFO  Processing buildTarget/compile
+2024.11.24 14:12:54 INFO  Processing buildTarget/compile
+2024.11.24 14:12:54 INFO  compiling root
+2024.11.24 14:12:54 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:12:54 ERROR -- Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:29:30 
+29 |        val newPost = ActorRef[Post]
+   |                      ^^^^^^^^^^^^^^
+   |object ActorRef in package org.apache.pekko.actor.typed does not take type parameters
+2024.11.24 14:12:55 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:12:55 ERROR two errors found
+2024.11.24 14:12:55 INFO  time: compiled root in 1.61s
+2024.11.24 14:12:55 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:12:55 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:12:55 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:12:55 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:12:55 INFO  compiling root
+2024.11.24 14:12:55 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:12:55 ERROR -- Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:29:30 
+29 |        val newPost = ActorRef[Post]
+   |                      ^^^^^^^^^^^^^^
+   |object ActorRef in package org.apache.pekko.actor.typed does not take type parameters
+2024.11.24 14:12:57 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:12:57 ERROR two errors found
+2024.11.24 14:12:57 INFO  time: compiled root in 1.51s
+2024.11.24 14:12:57 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:12:57 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:12:58 INFO  Processing buildTarget/compile
+2024.11.24 14:12:58 INFO  compiling root
+2024.11.24 14:12:58 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:12:58 ERROR -- Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:29:30 
+29 |        val newPost = ActorRef[Post]
+   |                      ^^^^^^^^^^^^^^
+   |object ActorRef in package org.apache.pekko.actor.typed does not take type parameters
+2024.11.24 14:13:00 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:13:00 ERROR two errors found
+2024.11.24 14:13:00 INFO  time: compiled root in 1.46s
+2024.11.24 14:13:00 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:13:00 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:13:00 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:13:00 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:13:00 INFO  compiling root
+2024.11.24 14:13:00 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:13:00 ERROR -- Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:29:30 
+29 |        val newPost = ActorRef[Post]
+   |                      ^^^^^^^^^^^^^^
+   |object ActorRef in package org.apache.pekko.actor.typed does not take type parameters
+2024.11.24 14:13:01 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:13:01 ERROR two errors found
+2024.11.24 14:13:01 INFO  time: compiled root in 1.39s
+2024.11.24 14:13:01 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:13:01 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:13:44 INFO  Processing buildTarget/compile
+2024.11.24 14:13:44 INFO  compiling root
+2024.11.24 14:13:44 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:13:44 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:31:9 
+31 |        }
+   |         ^
+   |  Found:    Unit
+   |  Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:13:45 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:13:45 ERROR two errors found
+2024.11.24 14:13:45 INFO  time: compiled root in 1.43s
+2024.11.24 14:13:45 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:13:45 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:13:45 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:13:45 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:13:45 INFO  compiling root
+2024.11.24 14:13:45 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:13:45 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:31:9 
+31 |        }
+   |         ^
+   |  Found:    Unit
+   |  Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:13:47 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:13:47 ERROR two errors found
+2024.11.24 14:13:47 INFO  time: compiled root in 1.34s
+2024.11.24 14:13:47 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:13:47 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:13:51 INFO  Processing buildTarget/compile
+2024.11.24 14:14:51 INFO  Processing buildTarget/compile
+2024.11.24 14:15:35 INFO  Processing buildTarget/compile
+2024.11.24 14:15:35 INFO  compiling root
+2024.11.24 14:15:35 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:15:35 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:31:9 
+31 |        }
+   |         ^
+   |  Found:    Unit
+   |  Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:15:37 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:15:37 ERROR two errors found
+2024.11.24 14:15:37 INFO  time: compiled root in 1.89s
+2024.11.24 14:15:37 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:15:37 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:15:37 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:15:37 INFO  compiling root
+2024.11.24 14:15:37 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:15:37 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:31:9 
+31 |        }
+   |         ^
+   |  Found:    Unit
+   |  Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:15:38 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:15:38 ERROR two errors found
+2024.11.24 14:15:38 INFO  time: compiled root in 1.64s
+2024.11.24 14:15:38 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:15:38 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:15:38 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:15:51 INFO  Processing buildTarget/compile
+nov. 24, 2024 2:15:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2458
+2024.11.24 14:15:58 INFO  Processing buildTarget/compile
+2024.11.24 14:15:58 INFO  compiling root
+2024.11.24 14:15:58 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:15:58 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:29:34 
+29 |        val newPost = new Actor {}
+   |                                  ^
+   |  Found:    Unit
+   |  Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:15:59 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:15:59 ERROR two errors found
+2024.11.24 14:15:59 INFO  time: compiled root in 1.65s
+2024.11.24 14:15:59 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:15:59 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:15:59 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:15:59 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:15:59 INFO  compiling root
+2024.11.24 14:15:59 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:15:59 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/RoomActor.scala:29:34 
+29 |        val newPost = new Actor {}
+   |                                  ^
+   |  Found:    Unit
+   |  Required: org.apache.pekko.actor.typed.Behavior[fr.cytech.icc.Message]
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:16:01 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:16:01 ERROR two errors found
+2024.11.24 14:16:01 INFO  time: compiled root in 1.43s
+2024.11.24 14:16:01 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:16:01 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:16:51 INFO  Processing buildTarget/compile
+nov. 24, 2024 2:17:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2828
+2024.11.24 14:17:42 INFO  Processing buildTarget/compile
+2024.11.24 14:17:42 INFO  compiling root
+2024.11.24 14:17:42 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:17:44 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:17:44 ERROR one error found
+2024.11.24 14:17:44 INFO  time: compiled root in 1.37s
+2024.11.24 14:17:44 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:17:44 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:17:44 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:17:44 INFO  compiling root
+2024.11.24 14:17:44 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:17:45 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:17:45 ERROR one error found
+2024.11.24 14:17:45 INFO  time: compiled root in 1.36s
+2024.11.24 14:17:45 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:17:45 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:17:45 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:17:51 INFO  Processing buildTarget/compile
+2024.11.24 14:18:51 INFO  Processing buildTarget/compile
+2024.11.24 14:19:51 INFO  Processing buildTarget/compile
+2024.11.24 14:20:51 INFO  Processing buildTarget/compile
+2024.11.24 14:21:51 INFO  Processing buildTarget/compile
+2024.11.24 14:22:51 INFO  Processing buildTarget/compile
+2024.11.24 14:23:51 INFO  Processing buildTarget/compile
+2024.11.24 14:24:51 INFO  Processing buildTarget/compile
+2024.11.24 14:25:19 INFO  Processing buildTarget/compile
+2024.11.24 14:25:19 INFO  compiling root
+2024.11.24 14:25:19 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:25:20 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:25:20 ERROR one error found
+2024.11.24 14:25:20 INFO  time: compiled root in 1.69s
+2024.11.24 14:25:20 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:25:20 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:25:20 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:25:20 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:25:20 INFO  compiling root
+2024.11.24 14:25:20 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:25:22 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:25:22 ERROR one error found
+2024.11.24 14:25:22 INFO  time: compiled root in 1.78s
+2024.11.24 14:25:22 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:25:22 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:25:51 INFO  Processing buildTarget/compile
+2024.11.24 14:26:51 INFO  Processing buildTarget/compile
+2024.11.24 14:27:51 INFO  Processing buildTarget/compile
+nov. 24, 2024 2:28:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3090
+2024.11.24 14:28:35 INFO  Processing buildTarget/compile
+2024.11.24 14:28:35 INFO  compiling root
+2024.11.24 14:28:35 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:28:37 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:28:37 ERROR one error found
+2024.11.24 14:28:37 INFO  time: compiled root in 1.9s
+2024.11.24 14:28:37 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:28:37 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:28:37 INFO  Processing buildTarget/scalaTestClasses
+2024.11.24 14:28:37 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:28:37 INFO  compiling root
+2024.11.24 14:28:37 INFO  compiling 2 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:28:39 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:28:39 ERROR one error found
+2024.11.24 14:28:39 INFO  time: compiled root in 1.44s
+2024.11.24 14:28:39 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:28:39 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:28:51 INFO  Processing buildTarget/compile
+nov. 24, 2024 2:28:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3147
+2024.11.24 14:29:51 INFO  Processing buildTarget/compile
+2024.11.24 14:30:06 INFO  Processing buildTarget/compile
+2024.11.24 14:30:06 INFO  compiling root
+2024.11.24 14:30:06 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:30:07 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:30:07 ERROR one error found
+2024.11.24 14:30:07 INFO  time: compiled root in 1.62s
+2024.11.24 14:30:07 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:30:07 INFO  Cancelling compilation on sbt server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:30:07 INFO  Processing buildTarget/scalaMainClasses
+2024.11.24 14:30:07 INFO  compiling root
+2024.11.24 14:30:07 INFO  compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
+2024.11.24 14:30:09 ERROR -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+96 |        complete(getRoom(roomId))
+   |                 ^^^^^^^^^^^^^^^
+   |Found:    scala.concurrent.Future[(
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+   |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
+   |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
+   |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
+   |
+   |One of the following imports might make progress towards fixing the problem:
+   |
+   |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
+   |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
+   |
+   |
+   | longer explanation available when compiling with `-explain`
+2024.11.24 14:30:09 ERROR one error found
+2024.11.24 14:30:09 INFO  time: compiled root in 1.72s
+2024.11.24 14:30:09 ERROR (Compile / compileIncremental) Compilation failed
+2024.11.24 14:30:09 INFO  Scala main classes not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: (Compile / compileIncremental) Compilation failed
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.24 14:30:09 INFO  Processing buildTarget/scalaTestClasses
+nov. 24, 2024 2:30:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2024.11.24 14:30:51 INFO  Processing buildTarget/compile

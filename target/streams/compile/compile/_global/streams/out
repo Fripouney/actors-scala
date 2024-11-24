@@ -1,11 +1,11 @@
-[error] -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:15 
-[error] 96 |        getRoom(roomId)
-[error]    |        ^^^^^^^^^^^^^^^
+[error] -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
+[error] 96 |        complete(getRoom(roomId))
+[error]    |                 ^^^^^^^^^^^^^^^
 [error]    |Found:    scala.concurrent.Future[(
 [error]    |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
 [error]    |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
 [error]    |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
-[error]    |Required: org.apache.pekko.http.scaladsl.server.Route
+[error]    |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
 [error]    |
 [error]    |One of the following imports might make progress towards fixing the problem:
 [error]    |
@@ -14,20 +14,4 @@
 [error]    |
 [error]    |
 [error]    | longer explanation available when compiling with `-explain`
-[error] -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:113:15 
-[error] 113 |        getPost(roomId, messageId)
-[error]     |        ^^^^^^^^^^^^^^^^^^^^^^^^^^
-[error]     |Found:    scala.concurrent.Future[(
-[error]     |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
-[error]     |  fr.cytech.icc.PostOutput) |
-[error]     |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
-[error]     |Required: org.apache.pekko.http.scaladsl.server.Route
-[error]     |
-[error]     |One of the following imports might make progress towards fixing the problem:
-[error]     |
-[error]     |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
-[error]     |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
-[error]     |
-[error]     |
-[error]     | longer explanation available when compiling with `-explain`
-[error] two errors found
+[error] one error found

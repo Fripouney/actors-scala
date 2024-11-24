@@ -93,7 +93,7 @@ case class Controller(
     },
     path("rooms" / Segment) { roomId =>
       get {
-        getRoom(roomId)
+        complete(getRoom(roomId))
       }
     },
     path("rooms" / Segment / "posts") { roomId =>
@@ -110,7 +110,7 @@ case class Controller(
     },
     path("rooms" / Segment / "posts" / Segment) { (roomId, messageId) =>
       get {
-        getPost(roomId, messageId)
+        complete(getPost(roomId, messageId))
       }
     }
   )
@@ -147,7 +147,7 @@ case class Controller(
           StatusCodes.NotFound
       }
 
-  private def getPost(roomId: String, messageId: String) =
+  private def getPost(roomId: String, messageId: String): Future[ToResponseMarshallable] =
   
     rooms
       .ask[Option[ActorRef[Message]]](ref => GetRoom(roomId, ref))

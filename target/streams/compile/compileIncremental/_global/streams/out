@@ -28,7 +28,7 @@
 [debug] compilation cycle 1
 [info] compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
 [debug] Returning already retrieved and compiled bridge: /home/fripouney/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.3.4/scala3-sbt-bridge-3.3.4.jar.
-[debug] [zinc] Running cached compiler 6a2533f9 for Scala Compiler version 3.3.4
+[debug] [zinc] Running cached compiler 28c990ec for Scala Compiler version 3.3.4
 [debug] [zinc] The Scala compiler is invoked with:
 [debug] 	-Xsemanticdb
 [debug] 	-semanticdb-target
