@@ -1,34 +1,32 @@
 [debug] [zinc] IncrementalCompile -----------
 [debug] IncrementalCompile.incrementalCompile
-[debug] previous = Stamps for: 36 products, 4 sources, 9 libraries
+[debug] previous = Stamps for: 38 products, 4 sources, 9 libraries
 [debug] current source = Set(${BASE}/src/main/scala/RoomListActor.scala, ${BASE}/src/main/scala/RoomActor.scala, ${BASE}/src/main/scala/routes.scala, ${BASE}/src/main/scala/Main.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/RoomListActor.scala, ${BASE}/src/main/scala/routes.scala, ${BASE}/src/main/scala/RoomActor.scala), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/RoomListActor.scala, ${BASE}/src/main/scala/routes.scala, ${BASE}/src/main/scala/Main.scala), unmodified = ...),Set(),Set(),API Changes: Set())
 [debug] 
 [debug] Initial source changes:
 [debug] 	removed: Set()
 [debug] 	added: Set()
-[debug] 	modified: Set(${BASE}/src/main/scala/RoomListActor.scala, ${BASE}/src/main/scala/routes.scala, ${BASE}/src/main/scala/RoomActor.scala)
+[debug] 	modified: Set(${BASE}/src/main/scala/RoomListActor.scala, ${BASE}/src/main/scala/routes.scala, ${BASE}/src/main/scala/Main.scala)
 [debug] Invalidated products: Set()
 [debug] External API changes: API Changes: Set()
 [debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated classes: Set(fr.cytech.icc.RoomInput, fr.cytech.icc.Message$.GetPost, fr.cytech.icc.Message, fr.cytech.icc.Message$.LatestPost, fr.cytech.icc.RoomListMessage, fr.cytech.icc.Message$.CreatePost, fr.cytech.icc.RoomListActor, fr.cytech.icc.Controller, fr.cytech.icc.RoomActor$package, fr.cytech.icc.Post, fr.cytech.icc.PostInput, fr.cytech.icc.RoomListMessage$.GetRoom, fr.cytech.icc.RoomListMessage$.CreateRoom, fr.cytech.icc.Message$.ListPosts, fr.cytech.icc.RoomActor, fr.cytech.icc.PostOutput)
+[debug] Initial directly invalidated classes: Set(fr.cytech.icc.RoomInput, fr.cytech.icc.RoomListMessage, fr.cytech.icc.RoomListActor, fr.cytech.icc.Controller, fr.cytech.icc.PostInput, fr.cytech.icc.RoomListMessage$.ListRooms, fr.cytech.icc.RoomListMessage$.GetRoom, fr.cytech.icc.RoomListMessage$.CreateRoom, fr.cytech.icc.Main, fr.cytech.icc.PostOutput)
 [debug] Sources indirectly invalidated by:
 [debug] 	product: Set()
 [debug] 	binary dep: Set()
 [debug] 	external source: Set()
-[debug] All initially invalidated classes: Set(fr.cytech.icc.RoomInput, fr.cytech.icc.Message$.GetPost, fr.cytech.icc.Message, fr.cytech.icc.Message$.LatestPost, fr.cytech.icc.RoomListMessage, fr.cytech.icc.Message$.CreatePost, fr.cytech.icc.RoomListActor, fr.cytech.icc.Controller, fr.cytech.icc.RoomActor$package, fr.cytech.icc.Post, fr.cytech.icc.PostInput, fr.cytech.icc.RoomListMessage$.GetRoom, fr.cytech.icc.RoomListMessage$.CreateRoom, fr.cytech.icc.Message$.ListPosts, fr.cytech.icc.RoomActor, fr.cytech.icc.PostOutput)
-[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/RoomListActor.scala, ${BASE}/src/main/scala/routes.scala, ${BASE}/src/main/scala/RoomActor.scala)
-[debug] Initial set of included nodes: fr.cytech.icc.RoomInput, fr.cytech.icc.Message$.GetPost, fr.cytech.icc.Message, fr.cytech.icc.Message$.LatestPost, fr.cytech.icc.RoomListMessage, fr.cytech.icc.Message$.CreatePost, fr.cytech.icc.RoomListActor, fr.cytech.icc.Controller, fr.cytech.icc.RoomActor$package, fr.cytech.icc.Post, fr.cytech.icc.PostInput, fr.cytech.icc.RoomListMessage$.GetRoom, fr.cytech.icc.RoomListMessage$.CreateRoom, fr.cytech.icc.Message$.ListPosts, fr.cytech.icc.RoomActor, fr.cytech.icc.PostOutput
-[debug] Including fr.cytech.icc.Message$.LatestPost by fr.cytech.icc.Message
-[debug] Including fr.cytech.icc.Message$.CreatePost by fr.cytech.icc.Message
-[debug] Including fr.cytech.icc.Message$.ListPosts by fr.cytech.icc.Message
+[debug] All initially invalidated classes: Set(fr.cytech.icc.RoomInput, fr.cytech.icc.RoomListMessage, fr.cytech.icc.RoomListActor, fr.cytech.icc.Controller, fr.cytech.icc.PostInput, fr.cytech.icc.RoomListMessage$.ListRooms, fr.cytech.icc.RoomListMessage$.GetRoom, fr.cytech.icc.RoomListMessage$.CreateRoom, fr.cytech.icc.Main, fr.cytech.icc.PostOutput)
+[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/RoomListActor.scala, ${BASE}/src/main/scala/routes.scala, ${BASE}/src/main/scala/Main.scala)
+[debug] Initial set of included nodes: fr.cytech.icc.RoomInput, fr.cytech.icc.RoomListMessage, fr.cytech.icc.RoomListActor, fr.cytech.icc.Controller, fr.cytech.icc.PostInput, fr.cytech.icc.RoomListMessage$.ListRooms, fr.cytech.icc.RoomListMessage$.GetRoom, fr.cytech.icc.RoomListMessage$.CreateRoom, fr.cytech.icc.Main, fr.cytech.icc.PostOutput
+[debug] Including fr.cytech.icc.RoomListMessage$.ListRooms by fr.cytech.icc.RoomListMessage
 [debug] Including fr.cytech.icc.RoomListMessage$.GetRoom by fr.cytech.icc.RoomListMessage
 [debug] Including fr.cytech.icc.RoomListMessage$.CreateRoom by fr.cytech.icc.RoomListMessage
 [debug] Recompiling all sources: number of invalidated sources > 50.0 percent of all sources
 [debug] compilation cycle 1
 [info] compiling 4 Scala sources to /home/fripouney/scala/tp-actors-cytech/target/scala-3.3.4/classes ...
 [debug] Returning already retrieved and compiled bridge: /home/fripouney/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.3.4/scala3-sbt-bridge-3.3.4.jar.
-[debug] [zinc] Running cached compiler 28c990ec for Scala Compiler version 3.3.4
+[debug] [zinc] Running cached compiler 2355be9 for Scala Compiler version 3.3.4
 [debug] [zinc] The Scala compiler is invoked with:
 [debug] 	-Xsemanticdb
 [debug] 	-semanticdb-target

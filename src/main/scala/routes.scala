@@ -15,7 +15,9 @@ import org.apache.pekko.http.scaladsl.server.{ Directives, Route }
 import org.apache.pekko.util.Timeout
 import spray.json.*
 import org.apache.pekko.actor.Actor
-//import org.apache.pekko.http.javadsl.model.ws.Message
+import scala.collection.immutable.SortedSet
+import org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError
+import org.apache.pekko.http.javadsl.model.StatusCode
 
 case class PostInput(author: String, content: String)
 
@@ -86,9 +88,9 @@ case class Controller(
   val routes: Route = concat(
     path("rooms") {
       post {
-        entity(as[RoomInput]) { payload => createRoom(payload) }
-      } ~ get {
-        listRooms()
+        entity(as[RoomInput]) { payload => complete(createRoom(payload)) }
+      } ~ get {None
+        complete(listRooms())
       }
     },
     path("rooms" / Segment) { roomId =>
@@ -98,9 +100,9 @@ case class Controller(
     },
     path("rooms" / Segment / "posts") { roomId =>
       post {
-        entity(as[PostInput]) { payload => createPost(roomId, payload) }
+        entity(as[PostInput]) { payload => complete(createPost(roomId, payload)) }
       } ~ get {
-        listPosts(roomId)
+        complete(listPosts(roomId))
       }
     },
     path("rooms" / Segment / "posts" / "latest") { roomId =>
@@ -115,36 +117,60 @@ case class Controller(
     }
   )
 
-  private def createRoom(input: RoomInput) = ???
+  private def createRoom(input: RoomInput): Future[ToResponseMarshallable] = 
+    rooms.!(RoomListMessage.CreateRoom(input.name))
+    
+    Future.successful(StatusCodes.Created)
 
-  private def listRooms() = ???
+  private def listRooms(): Future[ToResponseMarshallable] = ???
+    //rooms
+    //  .ask[Map[String, ActorRef[Message]]](ref => ListRooms(ref))
 
-  private def getRoom(roomId: String) = 
+    Future.successful(StatusCodes.OK)
+
+  private def getRoom(roomId: String): Future[ToResponseMarshallable] = 
     rooms
       .ask[Option[ActorRef[Message]]](ref => GetRoom(roomId, ref))
-      .map {
+      .flatMap {
         case Some(roomActorRef) => 
-          StatusCodes.OK -> roomActorRef
+          Future.successful(ToResponseMarshallable(StatusCodes.OK -> roomActorRef))
         case None =>
-          StatusCodes.NotFound
+          Future.successful(StatusCodes.NotFound)
       }
 
-  private def createPost(roomId: String, input: PostInput) = ???
+  private def createPost(roomId: String, input: PostInput): Future[ToResponseMarshallable] = 
+    rooms
+      .ask[Option[ActorRef[Message]]](ref => GetRoom(roomId, ref))
+      .flatMap {
+        case Some(roomActorRef) =>
+          roomActorRef.!(Message.CreatePost(input.author, input.content))
+          Future.successful(StatusCodes.Created)
+        case None => Future.successful(StatusCodes.NotFound)
+      }
 
-  private def listPosts(roomId: String) = ???
+
+  private def listPosts(roomId: String): Future[ToResponseMarshallable] = 
+    rooms
+      .ask[Option[ActorRef[Message]]](ref => GetRoom(roomId, ref))
+      .flatMap {
+        case Some(roomActorRef) =>
+          roomActorRef.ask[SortedSet[Post]](ref => Message.ListPosts(ref))
+          Future.successful(StatusCodes.OK)
+        case None => Future.successful(StatusCodes.NotFound)
+      }
 
   private def getLatestPost(roomId: String): Future[ToResponseMarshallable] =
     rooms
       .ask[Option[ActorRef[Message]]](ref => GetRoom(roomId, ref))
       .flatMap {
         case Some(roomActorRef) => roomActorRef.ask[Option[Post]](ref => Message.LatestPost(ref))
-        case None               => Future.successful(None)
+        case None               => Future.successful(StatusCodes.NotFound)
       }
       .map {
         case Some(post) =>
           StatusCodes.OK -> post.output(roomId)
         case None =>
-          StatusCodes.NotFound
+          StatusCodes.NotFound  
       }
 
   private def getPost(roomId: String, messageId: String): Future[ToResponseMarshallable] =
@@ -153,7 +179,7 @@ case class Controller(
       .ask[Option[ActorRef[Message]]](ref => GetRoom(roomId, ref))
       .flatMap {
         case Some(roomActorRef) => roomActorRef.ask[Option[Post]](ref => Message.GetPost(UUID.fromString(messageId), ref))
-        case None => Future.successful(None)
+        case None => Future.successful(StatusCodes.NotFound)
       }
       .map {
         case Some(post) =>

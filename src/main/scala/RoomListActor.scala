@@ -15,8 +15,9 @@ object RoomListActor {
   def apply(rooms: Map[String, ActorRef[Message]] = Map.empty): Behavior[RoomListMessage] = {
     Behaviors.setup { context =>
       Behaviors.receiveMessage {
-        case CreateRoom(name)       => ???
-
+        case CreateRoom(name)       => 
+          val newRoom = context.spawn(RoomActor(name), name)
+          Behaviors.same
 
         case GetRoom(name, replyTo) => 
           replyTo.!(rooms.get(name))

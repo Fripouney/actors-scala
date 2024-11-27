@@ -8,6 +8,7 @@
 [debug] 	RoomListMessage$CreateRoom.class
 [debug] 	Message$CreatePost.class
 [debug] 	Message$ListPosts$.class
+[debug] 	RoomListMessage$ListRooms.class
 [debug] 	PostInput$.class
 [debug] 	PostOutput$.class
 [debug] 	Message.class
@@ -26,6 +27,7 @@
 [debug] 	Controller.class
 [debug] 	PostOutput.class
 [debug] 	RoomListMessage$.class
+[debug] 	RoomListMessage$ListRooms$.class
 [debug] 	Post.class
 [debug] 	Message$CreatePost$.class
 [debug] 	PostInput.class
@@ -44,6 +46,7 @@
 [debug] 	RoomListMessage$CreateRoom.tasty
 [debug] 	Message$CreatePost.tasty
 [debug] 	Message$ListPosts$.tasty
+[debug] 	RoomListMessage$ListRooms.tasty
 [debug] 	PostInput$.tasty
 [debug] 	PostOutput$.tasty
 [debug] 	Message.tasty
@@ -62,6 +65,7 @@
 [debug] 	Controller.tasty
 [debug] 	PostOutput.tasty
 [debug] 	RoomListMessage$.tasty
+[debug] 	RoomListMessage$ListRooms$.tasty
 [debug] 	Post.tasty
 [debug] 	Message$CreatePost$.tasty
 [debug] 	PostInput.tasty
@@ -81,6 +85,7 @@
 [debug] 	RoomListMessage$CreateRoom.class
 [debug] 	Message$CreatePost.class
 [debug] 	Message$ListPosts$.class
+[debug] 	RoomListMessage$ListRooms.class
 [debug] 	PostInput$.class
 [debug] 	PostOutput$.class
 [debug] 	Message.class
@@ -99,6 +104,7 @@
 [debug] 	Controller.class
 [debug] 	PostOutput.class
 [debug] 	RoomListMessage$.class
+[debug] 	RoomListMessage$ListRooms$.class
 [debug] 	Post.class
 [debug] 	Message$CreatePost$.class
 [debug] 	PostInput.class
@@ -117,6 +123,7 @@
 [debug] 	RoomListMessage$CreateRoom.tasty
 [debug] 	Message$CreatePost.tasty
 [debug] 	Message$ListPosts$.tasty
+[debug] 	RoomListMessage$ListRooms.tasty
 [debug] 	PostInput$.tasty
 [debug] 	PostOutput$.tasty
 [debug] 	Message.tasty
@@ -135,6 +142,7 @@
 [debug] 	Controller.tasty
 [debug] 	PostOutput.tasty
 [debug] 	RoomListMessage$.tasty
+[debug] 	RoomListMessage$ListRooms$.tasty
 [debug] 	Post.tasty
 [debug] 	Message$CreatePost$.tasty
 [debug] 	PostInput.tasty
@@ -175,6 +183,7 @@
 [debug] 	RoomListMessage.tasty
 [debug] 	RoomInput$.class
 [debug] 	RoomListActor$.class
+[debug] 	RoomListMessage$ListRooms.class
 [debug] 	Message$.class
 [debug] 	RoomListMessage$GetRoom$.class
 [debug] 	Controller$$anon$1.class
@@ -185,6 +194,7 @@
 [debug] 	Post.tasty
 [debug] 	PostInput$.class
 [debug] 	Post.class
+[debug] 	RoomListMessage$ListRooms$.class
 [debug] 	Controller.tasty
 [debug] 	RoomActor.class
 [debug] 	RoomListActor.class

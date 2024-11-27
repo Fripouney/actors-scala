@@ -1,17 +1,18 @@
-[error] -- [E007] Type Mismatch Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:96:24 
-[error] 96 |        complete(getRoom(roomId))
-[error]    |                 ^^^^^^^^^^^^^^^
-[error]    |Found:    scala.concurrent.Future[(
-[error]    |  org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
-[error]    |  org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message]) |
-[error]    |  org.apache.pekko.http.scaladsl.model.StatusCodes.ClientError]
-[error]    |Required: org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshallable
-[error]    |
-[error]    |One of the following imports might make progress towards fixing the problem:
-[error]    |
-[error]    |  import org.apache.pekko.http.impl.util.JavaMapping.Implicits.convertToScala
-[error]    |  import org.apache.pekko.http.javadsl.server.RoutingJavaMapping.Implicits.convertToScala
-[error]    |
-[error]    |
-[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E172] Type Error: /home/fripouney/scala/tp-actors-cytech/src/main/scala/routes.scala:136:82 
+[error] 136 |          Future.successful(ToResponseMarshallable(StatusCodes.OK -> roomActorRef))
+[error]     |                                                                                  ^
+[error]     |No given instance of type org.apache.pekko.http.scaladsl.marshalling.ToResponseMarshaller[
+[error]     |  (org.apache.pekko.http.scaladsl.model.StatusCodes.Success,
+[error]     |    org.apache.pekko.actor.typed.ActorRef[fr.cytech.icc.Message])
+[error]     |] was found for parameter _marshaller of method apply in object ToResponseMarshallable.
+[error]     |I found:
+[error]     |
+[error]     |    org.apache.pekko.http.scaladsl.marshalling.Marshaller.fromStatusCodeAndValue[S,
+[error]     |      T]($conforms[A], this.sprayJsonMarshaller[T²]())
+[error]     |
+[error]     |But method sprayJsonMarshaller in trait SprayJsonSupport does not match type org.apache.pekko.http.scaladsl.marshalling.ToEntityMarshaller[T]
+[error]     |
+[error]     |where:    T  is a type variable
+[error]     |          T² is a type variable
+[error]     |.
 [error] one error found
